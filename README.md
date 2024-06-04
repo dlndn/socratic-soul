@@ -19,7 +19,7 @@ With all this said, I will have a (similar) disclaimer in the app and in here:
 
 Main Feature:
 
-- Mental state processing via Socratic Method
+- Mental State Processing via Socratic Method
 
   - Emotional: Process emotion(s) through guided questions and discover an action to properly deal with emotion(s), if desired and/or if possible
 
@@ -43,13 +43,9 @@ Note that these features are not set in stone; some might change into a differen
 
 - React
 
-- Python and TensorFlow
+- Sass
 
-  - To be used for the chatbot
-
-  - The technology used is highly dependent on time and feasibility
-
-  - As an alternative, a chatbot based off of an AI could be used to save time...
+- Gemini API
 
 - MySQL (Optional)
 
@@ -57,7 +53,7 @@ Note that these features are not set in stone; some might change into a differen
 
 ### APIs
 
-None at the moment; one possibility is to use an AI API as a chatbot if creating a chatbot is time consuming.
+- Gemini API
 
 ### Sitemap
 
@@ -71,7 +67,7 @@ It will probably be a Single Page Application, with different components being d
 
   - Relational Processing
 
-- Expressive Components
+- Expressive Components (Side Components)
 
   - Journaling Activity
 
@@ -99,6 +95,7 @@ User
 - userId (PK)
 - username
 - password
+- journals
 
 Journal
 
@@ -111,9 +108,11 @@ Journal Entry
 
 - entryId (PK)
 - journalId (FK to Journal)
-- userId (FK to User)
+- entryDate
+- title
+- content
 
-For now, journal entries and user accounts will be the only data to show CRUD functionality, if implemented. We can always add Mental State Processing Conversations and Etch-A-Sketch Pieces to stored data on servers, but to make things simpler, users can export the conversations or artwork into their local machine's storage.
+For now, all input/output can be saved to the user's local machine. Data provided might not be implemented in this scope, but in the future. Journal entries and user profiles have implementation priority to show CRUD functionality. We can always add Mental State Processing Conversations, Community Sticky Note Board Snapshots, and Etch-A-Sketch Pieces to stored data on servers.
 
 ### Endpoints
 
@@ -134,8 +133,22 @@ I will break the sprint into smaller sprints, which are done by weeks:
 - 1st Week - Brainstorming, Designing/Planning, and Tech Stack Testing/Research
 
 - 2nd Week - Functionality Implementation
+  - Project setup
+  - Create pages and components
+  - Main Feature: Mental State Processing
+    - Integrate API into application
+    - Configure AI API to its purposes
+    - Implement Mental Processing Chatbots
+  - Side Features: Expressive Activities
+    - Implement Sticky Note Board
+    - Implement Journal
+    - Implement Etch-A-Sketch
 
 - 3rd Week - Styling, Additional Features, Demo Day Prep, and Demo Day
+
+  - Improve styling (animations, change color scheme, add more assets, etc.)
+  - Add any more expressive activities (Optional)
+  - Implement backend server (Optional)
 
 ## Nice-to-haves
 
@@ -143,8 +156,10 @@ I will break the sprint into smaller sprints, which are done by weeks:
 
 - Elaborate styling for the app, with some animations and more gimmicky design features
 
-- Adding more activities related to expression
+- Adding more expressive activities
 
-- If the MVP has a chatbot that is built-from-scratch, improvements should be added to respond to more complex inputs.
+- Creating and integrating a chatbot from scratch
 
 - A database should be implemented if possible, it might be implemented now or post-bootcamp.
+
+- Learning and using Next.js in the project
