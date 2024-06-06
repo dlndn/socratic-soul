@@ -1,0 +1,14 @@
+@use './variables';
+
+// media query
+@mixin tablet {
+    @media (min-width: $screen-width-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $screen-width-desktop) {
+        @content;
+    }
+}
