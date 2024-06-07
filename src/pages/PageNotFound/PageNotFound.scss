@@ -1,0 +1,33 @@
+.page-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 4rem;
+        margin: 0;
+        text-shadow: 4px 4px lightgray;
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+    
+    &__img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 4px 4px 2px lightgray;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
