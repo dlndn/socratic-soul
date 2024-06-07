@@ -1,9 +1,15 @@
 import './styles/App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainPage from './pages/MainPage/MainPage';
 
 function App() {
   return (
     <main className="app">
-      <h1>Hello, World!</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
+    </BrowserRouter>
     </main>
   )
 }
