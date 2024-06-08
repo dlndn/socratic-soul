@@ -29,6 +29,11 @@
     .navbar {
         display: flex;
         justify-content: space-between;
+        height: 3rem;
+
+        @include tablet {
+            height: auto;
+        }
 
         &__link {
             display: flex;
@@ -36,7 +41,7 @@
             align-items: center;
             text-decoration: none;
             color: black;
-            padding: 1rem 0.5rem;
+            padding: 0.75rem 0.5rem;
             flex: 1;
 
             &:hover {
