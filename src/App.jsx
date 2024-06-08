@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import MainPage from './pages/MainPage/MainPage';
 import SelfReflectionPage from './pages/SelfReflectionPage/SelfReflectionPage';
+import SelfExpressionPage from './pages/SelfExpressionPage/SelfExpressionPage';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/self-reflection" element={<SelfReflectionPage />} />
+        <Route path="/self-expression" element={<SelfExpressionPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
