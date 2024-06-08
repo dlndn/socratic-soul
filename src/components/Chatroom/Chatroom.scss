@@ -1,0 +1,32 @@
+.chatroom {
+    display: flexbox;
+
+    &__display {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+
+    .prompt {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+
+        &__input {
+            flex: 8;
+            padding: 0.25rem;
+            resize: none;
+            height: 4rem;
+            border-radius: 5px;
+        }
+
+        &__submit-btn {
+            flex: 2;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    }
+}
