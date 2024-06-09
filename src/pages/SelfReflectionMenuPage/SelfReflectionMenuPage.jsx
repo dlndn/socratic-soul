@@ -21,7 +21,7 @@ function SelfReflectionMenuPage() {
                 </Link>
                 <Link
                     className="self-reflection-activity self-reflection-activity--relationships"
-                    to={"/self-reflection/emotions"}
+                    to={"/self-reflection/relationships"}
                 >
                     <h3 className="self-reflection-activity__title">
                         Relational Self-Reflection

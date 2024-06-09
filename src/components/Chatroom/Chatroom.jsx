@@ -1,6 +1,7 @@
 import "./Chatroom.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ChatMessage from "../ChatMessage/ChatMessage";
 
 function Chatroom({ topic }) {
     const [inputValue, setInputValue] = useState(""); // textarea's value
@@ -67,27 +68,11 @@ function Chatroom({ topic }) {
                 {chatHistory.map(
                     (chatMessage, index) =>
                         index > 0 && (
-                            <div className="message" key={index}>
-                                {chatMessage.role === "model" && ( // renders if message is from the AI
-                                    <div className="message__role-wrapper message__role-wrapper--model">
-                                        <p className="message__role">
-                                            {chatMessage.role}
-                                        </p>
-                                    </div>
-                                )}
-                                <div className="message__text-wrapper">
-                                    <p className="message__text">
-                                        {chatMessage.parts[0].text}
-                                    </p>
-                                </div>
-                                {chatMessage.role === "user" && ( // renders if message is from user
-                                    <div className="message__role-wrapper message__role-wrapper--user">
-                                        <p className="message__role">
-                                            {chatMessage.role}
-                                        </p>
-                                    </div>
-                                )}
-                            </div>
+                            <ChatMessage
+                                key={index}
+                                role={chatMessage.role}
+                                text={chatMessage.parts[0].text}
+                            />
                         )
                 )}
             </div>

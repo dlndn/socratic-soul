@@ -8,42 +8,6 @@
         height: 15rem;
         margin-bottom: 1rem;
         overflow: scroll;
-
-        .message {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            border-radius: 5px;
-            gap: 1rem;
-
-            &__role-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: lightgray;
-                border-radius: 50%;
-                width: 3rem;
-                height: 3rem;
-            }
-
-            &__text-wrapper {
-                border: 1px solid black;
-                border-radius: 5px;
-                padding: 0.5rem;
-                width: 90%;
-            }
-
-            &__role-wrapper--model {}
-            &__role-wrapper--user {}
-
-            &__role,
-            &__text {
-                font-size: 0.9rem;
-                padding: 0.5rem;
-            }
-        }
     }
 
     .prompt {
