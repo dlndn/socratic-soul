@@ -1,11 +1,33 @@
 import "./Chatroom.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios';
 
-function Chatroom() {
+function Chatroom({ topic }) {
     const [inputValue, setInputValue] = useState(""); // textarea's value
     const [error, setError] = useState(""); // for displaying error messages
     const [chatHistory, setChatHistory] = useState([]); // array with the object structure used to feed Gemini API the chat history
+
+    useEffect(() => {
+        getInitialResponse(topic);
+    }, []);
+
+    async function getInitialResponse(responseTopic) {
+        try {
+            const response = await axios.post(
+                "http://localhost:8080/init-chatbot", 
+                { topic: responseTopic }
+            );
+
+            const initialData = await response.data;
+            setChatHistory([
+                { role: "user", parts: [{ text: initialData.user }] },
+                { role: "model", parts: [{ text: initialData.model }] }
+            ]);
+        } catch (error) {
+            console.error(error);
+            setError("Something went wrong; please try again later!");
+        }
+    }
 
     async function getResponse() {
         if (!inputValue) { 
@@ -18,7 +40,8 @@ function Chatroom() {
                 "http://localhost:8080/chatbot",
                 { 
                     history: chatHistory, 
-                    message: inputValue 
+                    message: inputValue,
+                    topic: topic 
                 }
             );
             const messageData = await response.data;
@@ -45,7 +68,8 @@ function Chatroom() {
     return (
         <div className="chatroom">
             <div className="chatroom__display">
-                {chatHistory.map((chatItem, index) => (
+                {chatHistory.map((chatItem, index) => 
+                index > 0 && (
                     <div className="message" key={index}>
                         <p className="message__role">{chatItem.role}</p>
                         <p className="message__text">{chatItem.parts[0].text}</p>
@@ -69,7 +93,7 @@ function Chatroom() {
                 )}
                 {error && (
                     <button
-                        className="prompt__submit-btn"
+                        className="prompt__clear-btn"
                         onClick={clearInputs}
                     >
                         Clear

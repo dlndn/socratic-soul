@@ -14,8 +14,12 @@ function App() {
                 <Routes>
                     <Route path="/" element={<MainPage />} />
                     <Route
-                        path="/self-reflection"
-                        element={<SelfReflectionPage />}
+                        path="/self-reflection/emotions"
+                        element={<SelfReflectionPage topic='Emotions' />}
+                    />
+                    <Route
+                        path="/self-reflection/relationships"
+                        element={<SelfReflectionPage topic='Relationships' />}
                     />
                     <Route
                         path="/self-expression"
