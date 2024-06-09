@@ -27,7 +27,7 @@ function App() {
                         element={<SelfReflectionPage topic='Relationships' />}
                     />
                     <Route
-                        path="/self-expression"
+                        path="/self-expression/drawing"
                         element={<SelfExpressionPage />}
                     />
                     <Route path="*" element={<PageNotFound />} />

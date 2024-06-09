@@ -21,23 +21,9 @@ function MainPage() {
                     </div>
                     <h3 className="activities__category">Self-Expression</h3>
                     <div className="activities__row">
-                        <Link to={'/'} className="activity">
-                            <h4 className="activity__title">Activity 1</h4>
-                            <p className="activity__description">Insert activity description here...</p>
-                        </Link>
-                        <Link to={'/'} className="activity">
-                            <h4 className="activity__title">Activity 2</h4>
-                            <p className="activity__description">Insert activity description here...</p>
-                        </Link>
-                    </div>
-                    <div className="activities__row">
-                        <Link to={'/'} className="activity">
-                            <h4 className="activity__title">Activity 3</h4>
-                            <p className="activity__description">Insert activity description here...</p>
-                        </Link>
-                        <Link to={'/'} className="activity">
-                            <h4 className="activity__title">Activity 4</h4>
-                            <p className="activity__description">Insert activity description here...</p>
+                        <Link to={'/self-expression/drawing'} className="activity">
+                            <h4 className="activity__title">Drawing</h4>
+                            <p className="activity__description">Express how you feel through drawing and coloring!</p>
                         </Link>
                     </div>
                 </div>
