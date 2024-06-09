@@ -78,14 +78,14 @@ function Chatroom({ topic }) {
             </div>
             <div className="prompt">
                 <textarea
-                    className="prompt__input"
+                    className={`prompt__input ${error && 'prompt__input--error'}`}
                     placeholder="Enter your prompt here..."
                     onChange={(e) => setInputValue(e.target.value)}
                     value={inputValue}
                 />
                 {!error && (
                     <button
-                        className="prompt__submit-btn"
+                        className="prompt__btn prompt__btn--submit"
                         onClick={getResponse}
                     >
                         Enter
@@ -93,7 +93,7 @@ function Chatroom({ topic }) {
                 )}
                 {error && (
                     <button
-                        className="prompt__clear-btn"
+                        className="prompt__btn prompt__btn--clear"
                         onClick={clearInputs}
                     >
                         Clear

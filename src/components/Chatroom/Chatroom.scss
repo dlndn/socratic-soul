@@ -45,12 +45,23 @@
             resize: none;
             height: 2.5rem;
             border-radius: 5px;
+
+            &--error {
+                border-color: red;
+            }
         }
 
-        &__submit-btn {
+        &__btn {
             flex: 2;
             border: 1px solid black;
             border-radius: 5px;
         }
+    }
+
+    &__error-message {
+        margin: 1rem 0 0 1rem;
+        color: red;
+        font-size: 0.75rem;
+        text-align: center;
     }
 }
