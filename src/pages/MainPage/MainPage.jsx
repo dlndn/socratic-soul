@@ -10,9 +10,13 @@ function MainPage() {
                     <h2 className="activities__title">Activities</h2>
                     <h3 className="activities__category">Self-Reflection</h3>
                     <div className="activities__row">
-                        <Link to={'/'} className="activity">
-                            <h4 className="activity__title">Guided Self-Reflection</h4>
-                            <p className="activity__description">Chat with someone who will guide you in learning more about how you are currently feeling.</p>
+                        <Link to={'/self-reflection/emotions'} className="activity">
+                            <h4 className="activity__title">Emotions</h4>
+                            <p className="activity__description">Chat with an AI who will guide you to better understand your current feelings.</p>
+                        </Link>
+                        <Link to={'/self-reflection/relationships'} className="activity">
+                            <h4 className="activity__title">Relationships</h4>
+                            <p className="activity__description">Chat with an AI to reflect and evaluate on current relationship(s).</p>
                         </Link>
                     </div>
                     <h3 className="activities__category">Self-Expression</h3>
