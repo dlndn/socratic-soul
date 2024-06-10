@@ -1,5 +1,7 @@
 # Socratic Soul
 
+Link to the server-side code [here](https://github.com/dlndn/socratic-soul-server).
+
 ## Overview  
 
 This is a simple mental health app that provides a space to reflect, process emotions and relationships, and express emotions in a healthy way.
