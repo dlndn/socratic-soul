@@ -1,3 +1,21 @@
 // media query screen sizes
-$screen-width-tablet: 768px;
-$screen-width-desktop: 1280px;
+    $screen-width-tablet: 768px;
+    $screen-width-desktop: 1280px;
+
+// main color scheme
+    // primary colors
+    $primary-light-blue: #B3D7FF;
+    $very-light-blue: #EBF5FF;
+
+    // accent colors
+    $accent-medium-blue: #85C0F0;
+    $accent-soft-lavender: #E0D6F0;
+
+    // text colors
+    $text-black: #000000;
+    $dark-gray: #666666;
+
+    // extra colors
+    $white: #FFFFFF;
+    $darkened-primary-blue: #337AB7; // darker shade of primary
+    $navy-blue: #001F3F;

@@ -1,7 +1,8 @@
+@use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
 .header {
-    background-color: lightgray;
+    background-color: $primary-light-blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -17,7 +18,6 @@
     &__logo {
         padding: 0.5rem;
         text-align: center;
-        border-bottom: 1px solid gray;
 
         @include tablet {
             padding: 0;
@@ -29,11 +29,7 @@
     .navbar {
         display: flex;
         justify-content: space-between;
-        height: 3rem;
-
-        @include tablet {
-            height: auto;
-        }
+        height: 4rem;
 
         &__link {
             display: flex;
@@ -45,11 +41,11 @@
             flex: 1;
 
             &:hover {
-                background-color: gray;
+                background-color: $primary-light-blue;
             }
 
             &--active {
-                border-bottom: 2px solid black;
+                border-bottom: 5px solid $accent-medium-blue;
             }
         }
 
