@@ -28,7 +28,7 @@ function App() {
                     />
                     <Route
                         path="/self-expression/drawing"
-                        element={<SelfExpressionPage />}
+                        element={<SelfExpressionPage activity={"Drawing"}/>}
                     />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>

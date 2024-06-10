@@ -1,8 +1,18 @@
+import { ReactSketchCanvas } from "react-sketch-canvas";
 import "./Drawing.scss";
 
 function Drawing() {
     return (
-        <h1>Drawing Page</h1>
+        <section className="drawing">
+            <div className="canvas">
+                <h2 className="canvas__title">Draw Here!</h2>
+                <ReactSketchCanvas
+                    className="canvas__drawing-area"
+                    width="100%"
+                    height="100%"
+                />
+            </div>
+        </section>
     );
 }
 
