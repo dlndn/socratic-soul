@@ -22,7 +22,7 @@
         text-align: center;
     }
 
-    .activities {
+    .activity-category {
         &__title {
             text-align: center;
             margin: 1rem 0;
@@ -39,14 +39,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-
-            @include tablet {
-                flex-direction: row;
-                gap: 1rem;
-            }
         }
 
-        .activity {
+        .category {
             text-decoration: none;
             border: 1px solid black;
             border-radius: 5px;
