@@ -1,4 +1,4 @@
-# Project Title: SocraticSoul
+# Socratic Soul
 
 ## Overview  
 
@@ -19,19 +19,17 @@ With all this said, I will have a (similar) disclaimer in the app and in here:
 
 Main Feature:
 
-- Mental State Processing via Socratic Method
+- Understanding Mental State via Socratic Questioning
 
-  - Emotional: Process emotion(s) through guided questions and discover an action to properly deal with emotion(s), if desired and/or if possible
+  - Emotional: Process emotion(s) through guided questions and discover an action to properly deal with emotion(s), if desired and/or if possible.
 
-  - Relational: Process a relationship through guided questions and discover the next action to take in the relationship, if possible
+  - Relational: Gain insight about a relationship through guided questions and discover the next action to take in the relationship, if possible.
 
 Side Features:
 
 - Express emotions through various therapeutic activities:
 
-  - **Journaling**: Write down thoughts and describe mental state in text. Users will have the option to export entries into a (text, pdf, or markdown) file or to save into their account.
-  - **Sticky Note Sharing**: Write down brief message in a "sticky note" and post them into a community board of sticky notes that can be seen by all users. (Original concept was provided by TA Jeff Ma)
-  - **Etch-A-Sketch**: Simple grid on a page that can simulate a drawing by hovering over it and making lines. (Original concept discovered from the Odin Project)
+  - Drawing: Use a web canvas to draw, color, and create artwork. There is an option to provide users prompts, each of which are art therapy exercises.
 
 Note that these features are not set in stone; some might change into a different activity, some might be removed due to time constraints, or there might be additions to the current listed activities. It really depends on the time available to implement these activities.
 
@@ -39,17 +37,34 @@ Note that these features are not set in stone; some might change into a differen
 
 ### Tech Stack
 
-- Vite
+- Front-End
+  - Vite
 
-- React
+  - React
 
-- Sass
+  - Sass
 
-- Gemini API
+  - react-sketch-canvas
 
-- MySQL (Optional)
+  - react-router-dom
 
-- A framework/library to aid in styling pages (Optional)
+  - axios
+
+- Back-end
+
+  - nodemon
+
+  - express
+
+  - cors
+
+  - dotenv
+
+  - dotenv-expand
+
+  - Google AI SDK for JavaScript (for Gemini AI)
+
+  - MySQL (Optional)
 
 ### APIs
 
@@ -61,29 +76,33 @@ It will probably be a Single Page Application, with different components being d
 
 - Main Page
 
-- Thought Processing Components (Main components)
+- Activity Category Menu Pages
+
+  - Self-Reflection Menu
+
+  - Self-Expression Menu
+
+- Self-Reflection Components (Main components)
 
   - Emotional Processing
 
   - Relational Processing
 
-- Expressive Components (Side Components)
+- Self-Expression Components (Side Components)
 
-  - Journaling Activity
-
-  - Sticky Notes Activity
-
-  - Etch-A-Sketch Activity
+  - Drawing Activity
 
 ### Mockups
 
 For now, the page design will be very simple and minimal:
 
-- Main Page will have the Logo, a disclaimer popup, and large buttons to select an activity
+- Main Page will have the Logo, a disclaimer popup, and large buttons to select an activity category which redirect to an Activity Category Page
 
-- Emotional and Relational Processing Activites will be displayed in a chat-app style
+- Each Activity Category Page contains large buttons to direct to the specific activity
 
-- Expressive Activities will be displayed with simple inputs and minimal styling
+- Emotional and Relational Self-Reflection Activites will be displayed in a chat-app style
+
+- Self-Expression Activities will be displayed with simple inputs and minimal styling
 
 Main goal is to create a functional application first, then elaborate on styling if there is time.
 Color palette choice will have to play a key factor in design if the minimal style cannot be worked on.
@@ -116,11 +135,23 @@ For now, all input/output can be saved to the user's local machine. Data provide
 
 ### Endpoints
 
-- GET /journal
-- GET /journal/entries
-- POST /journal/entries
-- POST /login
-- POST /signup
+- Chatbot Feature
+
+  - POST /init-chatbot
+
+  - POST /chatbot
+
+- Journaling Feature (Optional)
+
+  - GET /journal
+
+  - GET /journal/entries
+
+  - POST /journal/entries
+
+  - POST /login
+
+  - POST /signup
 
 ### Auth
 
@@ -133,32 +164,56 @@ I will break the sprint into smaller sprints, which are done by weeks:
 - 1st Week - Brainstorming, Designing/Planning, and Tech Stack Testing/Research
 
 - 2nd Week - Functionality Implementation
+
   - Project setup
+
   - Create pages and components
+
   - Main Feature: Mental State Processing
+
+    - Implement backend server for API
+
     - Integrate API into application
+
     - Configure AI API to its purposes
-    - Implement Mental Processing Chatbots
+
+    - Implement Mental Processing Chatbot
+
   - Side Features: Expressive Activities
-    - Implement Sticky Note Board
-    - Implement Journal
-    - Implement Etch-A-Sketch
+
+    - Implement Drawing Activity
 
 - 3rd Week - Styling, Additional Features, Demo Day Prep, and Demo Day
 
-  - Improve styling (animations, change color scheme, add more assets, etc.)
+  - Minimal Styling
+
+  - Improved Styling (Optional)
+  
+    - Animations
+
+    - Change color scheme
+
+    - Additional color scheme
+
+    - Add more assets
+
   - Add any more expressive activities (Optional)
-  - Implement backend server (Optional)
 
 ## Nice-to-haves
 
-- Changing the Etch-A-Sketch into a more unique or more therapeutic art therapy activity
+- Adding more expressive activities
+
+  - Journaling: Write down thoughts and describe mental state in text. Users will have the option to export entries into a (text, pdf, or markdown) file or to save into their account.
+
+  - Sticky Note Sharing: Write down brief message in a "sticky note" and post them into a community board of sticky notes that can be seen by all users. (Original concept was provided by TA Jeff Ma)
+
+  - Etch-A-Sketch: Simple grid on a page that can simulate a drawing by hovering over it and making lines. (Original concept discovered from the Odin Project)
+
+- Changing the Etch-A-Sketch into a more unique or more therapeutic art activity
 
 - Elaborate styling for the app, with some animations and more gimmicky design features
 
-- Adding more expressive activities
-
-- Creating and integrating a chatbot from scratch
+- Creating and integrating a new chatbot from scratch
 
 - A database should be implemented if possible, it might be implemented now or post-bootcamp.
 
