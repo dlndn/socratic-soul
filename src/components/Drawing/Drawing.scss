@@ -1,3 +1,4 @@
+@use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
 
 .drawing {
@@ -54,12 +55,16 @@
         &__color-input {
             height: 2.5rem;
             padding: 0.25rem;
+            background-color: $primary-light-blue;
+            border: none;
+            border-radius: 5px;
         }
 
         &__btn {
             padding: 0.5rem;
-            border: 1px solid black;
+            border: none;
             border-radius: 5px;
+            background-color: $primary-light-blue;
         }
     }
 
@@ -72,14 +77,15 @@
 
         &__btn {
             padding: 0.5rem;
-            border: 1px solid black;
+            border: none;
+            background-color: $primary-light-blue;
             border-radius: 5px;
             flex: 1;
         }
 
         &__text {
             padding: 0.5rem;
-            border: 1px solid black;
+            border: 1px solid $darkened-primary-blue;
             border-radius: 5px;
             flex: 5;
         }
