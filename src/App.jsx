@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import MainPage from "./pages/MainPage/MainPage";
 import SelfReflectionMenuPage from "./pages/SelfReflectionMenuPage/SelfReflectionMenuPage";
+import SelfExpressionMenuPage from "./pages/SelfExpressionMenuPage/SelfExpressionMenuPage";
 import SelfReflectionPage from "./pages/SelfReflectionPage/SelfReflectionPage";
 import SelfExpressionPage from "./pages/SelfExpressionPage/SelfExpressionPage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
@@ -25,6 +26,10 @@ function App() {
                     <Route
                         path="/self-reflection/relationships"
                         element={<SelfReflectionPage topic='Relationships' />}
+                    />
+                    <Route
+                        path="/self-expression"
+                        element={<SelfExpressionMenuPage />}
                     />
                     <Route
                         path="/self-expression/drawing"

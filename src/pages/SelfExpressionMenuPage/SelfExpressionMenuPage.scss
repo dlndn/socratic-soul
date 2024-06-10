@@ -1,0 +1,52 @@
+@use '../../styles/partials/mixins' as *;
+
+.self-expression-menu-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+        width: 80%;
+        max-width: 768px;
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .self-expression-activity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1rem;
+        margin: 0.5rem;
+        width: 100%;
+
+        &__title,
+        &__description {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__description {
+            font-size: 1rem;
+        }
+    }
+}
