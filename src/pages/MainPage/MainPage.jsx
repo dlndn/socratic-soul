@@ -1,13 +1,14 @@
 import "./MainPage.scss";
 import { Link } from "react-router-dom";
 import greekBustImg from "../../assets/images/kintsugi-greek-bust.png";
+import brokenGreekBustImg from "../../assets/images/broken-bust-male-no-bg.png";
 
 function MainPage() {
     return (
         <section className="main-page">
             <div className="main-page__content">
                 <h1 className="main-page__title">Socratic Soul</h1>
-                <img src={greekBustImg} alt="An Ancient Greek bust inlined with cracks of gold." className="main-page__img" />
+                <img src={brokenGreekBustImg} alt="A broken Ancient-Greek-style bust." className="main-page__img" />
                 <h4 className="main-page__quote">"True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us."</h4>
                 <p className="main-page__quote-author">- Socrates</p>
                 <p className="main-page__welcome-message">Welcome to Socratic Soul! Here is a place to learn more about yourself and to express who you are. To begin, please select an activity category below.</p>
