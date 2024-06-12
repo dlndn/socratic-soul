@@ -11,7 +11,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 1rem;
         padding: 1rem;
         margin: 1rem;
         width: 80%;
@@ -21,15 +20,27 @@
     &__title {
         font-size: 2rem;
         text-align: center;
+        margin-bottom: 1.5rem;
     }
 
     &__img {
-        width: 15rem;
-        margin-bottom: 2rem;
+        width: 12.5rem;
+        border-radius: 5px;
+        margin-bottom: 0.25rem;
+    }
+
+    &__img-label {
+        margin-bottom: 1.5rem;
+        font-size: 0.75rem;
+    }
+
+    &__heading {
+        margin-bottom: 1rem;
     }
 
     &__description {
         text-align: center;
+        margin-bottom: 1rem;
     }
 
     .self-reflection-activity {
@@ -43,7 +54,7 @@
         background-color: $light-blue;
         border-radius: 5px;
         padding: 1rem;
-        margin: 0.5rem;
+        margin: 1rem;
         width: 100%;
 
         &__title,

@@ -15,7 +15,7 @@
         padding: 1rem;
         margin: 1rem;
         width: 80%;
-        max-width: 768px;
+        max-width: $screen-width-tablet;
     }
 
     &__title {
@@ -28,7 +28,7 @@
     }
 
     &__img {
-        width: 10rem;
+        width: 11rem;
     }
 
     .self-expression-activity {

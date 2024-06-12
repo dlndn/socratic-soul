@@ -1,6 +1,6 @@
 import "./SelfReflectionMenuPage.scss";
 import { Link } from "react-router-dom";
-import thinkerImg from "../../assets/images/thinker-sculpture-no-bg.png";
+import thinkerImg from "../../assets/images/thinker-sculpture.jpg";
 
 function SelfReflectionMenuPage() {
     return (
@@ -10,6 +10,7 @@ function SelfReflectionMenuPage() {
                     Self-Reflection Activities
                 </h1>
                 <img src={thinkerImg} alt="A sculpture of the Thinker." className="self-reflection-menu-page__img" />
+                <p className="self-reflection-menu-page__img-label">A figure of The Thinker.</p>
                 <h4 className="self-reflection-menu-page__heading">Which part of yourself would you like to know more about?</h4>
                 <p className="self-reflection-menu-page__description">These activities are filled with questions. Do you want to learn more about your emotions? Maybe your current relationships? Click one of the following category to start a conversation to learn more about yourself!</p>
                 <Link
