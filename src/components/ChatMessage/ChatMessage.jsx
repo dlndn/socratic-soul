@@ -1,5 +1,6 @@
 import "./ChatMessage.scss";
-import femaleSilhouetteImg from "../../assets/images/female-head-silhouette.svg"
+import femaleSilhouetteImg from "../../assets/images/female-head-silhouette.svg";
+import Markdown from 'react-markdown';
 
 function ChatMessage({ role, text }) {
     return (
@@ -10,7 +11,7 @@ function ChatMessage({ role, text }) {
                 </div>
             )}
             <div className="message__text-wrapper">
-                <p className="message__text">{text}</p>
+                <Markdown className="message__text">{text}</Markdown>
             </div>
             {role === "user" && ( // renders if message is from user
                 <div className="message__role-wrapper message__role-wrapper--user">

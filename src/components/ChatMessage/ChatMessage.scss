@@ -33,6 +33,13 @@
         padding: 0.5rem;
     }
 
+    // for react-markdown's Markdown component
+    // the lists generated inside ignores the padding
+    &__text ol,
+    &__text ul {
+        list-style-position: inside;
+    }
+
     &__user-img {
         width: 2rem;
     }
