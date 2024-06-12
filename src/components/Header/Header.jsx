@@ -25,14 +25,14 @@ function Header() {
                     className={`navbar__link navbar__link--self-reflection ${currentPage === "self-reflection" &&  "navbar__link--active"}`}
                     onClick={() => changeCurrentPage("self-reflection")}
                 >
-                    <p className="navbar__text">Self-Reflection</p>
+                    <p className="navbar__text">Reflect</p>
                 </Link>
                 <Link 
                     to={"/self-expression"} 
                     className={`navbar__link navbar__link--self-expression ${currentPage === "self-expression" &&  "navbar__link--active"}`}
                     onClick={() => changeCurrentPage("self-expression")}
                 >
-                    <p className="navbar__text">Self-Expression</p>
+                    <p className="navbar__text">Express</p>
                 </Link>
             </nav>
         </header>
