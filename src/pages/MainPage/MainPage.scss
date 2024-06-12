@@ -19,8 +19,16 @@
     }
 
     &__img {
-        width: 15rem;
+        width: 12.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        border-radius: 5px;
+    }
+
+    &__img-label {
         margin: 1.5rem;
+        margin-top: 0.25rem;
+        font-size: 0.75rem;
     }
 
     &__title {

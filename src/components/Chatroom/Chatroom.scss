@@ -3,6 +3,9 @@
 
 .chatroom {
     display: flexbox;
+    border: 1px solid $darkened-light-blue;
+    padding: 1rem;
+    border-radius: 5px;
     
     &__display {
         background-color: $white;
@@ -21,7 +24,7 @@
         gap: 0.5rem;
 
         &__input {
-            flex: 8;
+            flex: 7;
             padding: 0.75rem;
             resize: none;
             height: 2.5rem;
@@ -34,11 +37,16 @@
         }
 
         &__btn {
-            flex: 2;
+            flex: 3;
             border: none;
             border-radius: 5px;
             background-color: $light-blue;
-            font-size: 1rem;
+            font-size: 0.75rem;
+
+            @include tablet {
+                flex: 1;
+                font-size: 1rem;
+            }
         }
     }
 
