@@ -6,7 +6,7 @@
     
     &__display {
         background-color: $white;
-        border: 1px solid $darkened-primary-blue;
+        border: 1px solid $darkened-light-blue;
         border-radius: 5px;
         width: 100%;
         height: 15rem;
@@ -26,7 +26,7 @@
             resize: none;
             height: 2.5rem;
             border-radius: 5px;
-            border: 1px solid $darkened-primary-blue;
+            border: 1px solid $darkened-light-blue;
 
             &--error {
                 border-color: red;

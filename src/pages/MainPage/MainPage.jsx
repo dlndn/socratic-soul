@@ -8,6 +8,7 @@ function MainPage() {
         <section className="main-page">
             <div className="main-page__content">
                 <h1 className="main-page__title">Socratic Soul</h1>
+                <p className="main-page__slogan">Ask more. Think more. Express more.</p>
                 <img src={brokenGreekBustImg} alt="A broken Ancient-Greek-style bust." className="main-page__img" />
                 <h4 className="main-page__quote">"True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us."</h4>
                 <p className="main-page__quote-author">- Socrates</p>

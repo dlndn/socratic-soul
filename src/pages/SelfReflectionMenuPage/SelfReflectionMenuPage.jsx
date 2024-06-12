@@ -10,7 +10,8 @@ function SelfReflectionMenuPage() {
                     Self-Reflection Activities
                 </h1>
                 <img src={thinkerImg} alt="A sculpture of the Thinker." className="self-reflection-menu-page__img" />
-                <p className="self-reflection-menu-page__description">These activities are filled with questions. What do you want to know more about yourself? Your emotions or your relationships? Select one of the following category to begin a conversation of self-discovery and contemplation.</p>
+                <h4 className="self-reflection-menu-page__heading">Which part of yourself would you like to know more about?</h4>
+                <p className="self-reflection-menu-page__description">These activities are filled with questions. Do you want to learn more about your emotions? Maybe your current relationships? Click one of the following category to start a conversation to learn more about yourself!</p>
                 <Link
                     className="self-reflection-activity self-reflection-activity--emotions"
                     to={"/self-reflection/emotions"}

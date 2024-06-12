@@ -65,7 +65,7 @@ function Drawing() {
             </div>
             <div className="drawing-controls">
                     <h2 className="drawing-controls__title">
-                        Sketching Controls
+                        Drawing Controls
                     </h2>
                     <div className="drawing-controls__btn-wrapper">
                         <div className="drawing-controls__row">
