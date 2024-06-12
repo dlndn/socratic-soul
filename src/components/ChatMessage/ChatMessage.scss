@@ -1,6 +1,15 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
 .message {
     display: flex;
     justify-content: space-between;
@@ -9,31 +18,51 @@
     padding: 0.5rem;
     border-radius: 5px;
     gap: 1rem;
+    animation: fade-in 1s;
 
     &__role-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $primary-light-blue;
+        flex: 1;
+    }
+
+    &__text-wrapper {
+        border: 1px solid $darkened-light-blue;
+        border-radius: 5px;
+        padding: 0.5rem;
+        flex: 9;
+    }
+
+    &__role-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-blue;
         border-radius: 50%;
         width: 3rem;
         height: 3rem;
     }
 
-    &__text-wrapper {
-        border: 1px solid $darkened-primary-blue;
-        border-radius: 5px;
-        padding: 0.5rem;
-        width: 90%;
-    }
-
-    &__role,
     &__text {
         font-size: 0.9rem;
         padding: 0.5rem;
+        background-color: $very-light-blue;
+        border-radius: 5px;
     }
 
-    &__user-img {
-        width: 2rem;
+    // for react-markdown's Markdown component
+    // the lists generated inside ignores the padding
+    &__text ol,
+    &__text ul {
+        list-style-position: inside;
+    }
+
+    &__img {
+        width: 2.25rem;
+
+        &--user {
+            transform: scaleX(-1);
+        }
     }
 }

@@ -2,7 +2,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .header {
-    background-color: $primary-light-blue;
+    background-color: $light-blue;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -41,11 +41,11 @@
             flex: 1;
 
             &:hover {
-                background-color: $primary-light-blue;
+                background-color: $light-blue;
             }
 
             &--active {
-                border-bottom: 5px solid $accent-medium-blue;
+                border-bottom: 5px solid $medium-blue;
             }
         }
 

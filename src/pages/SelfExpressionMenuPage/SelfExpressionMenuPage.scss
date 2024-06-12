@@ -15,7 +15,7 @@
         padding: 1rem;
         margin: 1rem;
         width: 80%;
-        max-width: 768px;
+        max-width: $screen-width-tablet;
     }
 
     &__title {
@@ -23,8 +23,12 @@
         text-align: center;
     }
 
+    &__description {
+        text-align: center;
+    }
+
     &__img {
-        width: 10rem;
+        width: 11rem;
     }
 
     .self-expression-activity {
@@ -34,8 +38,8 @@
         flex-direction: column;
         gap: 1rem;
         text-decoration: none;
-        color: black;
-        background-color: $primary-light-blue;
+        color: $black;
+        background-color: $light-blue;
         border-radius: 5px;
         padding: 1rem;
         margin: 0.5rem;

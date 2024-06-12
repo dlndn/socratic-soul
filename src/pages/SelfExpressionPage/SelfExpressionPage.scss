@@ -12,6 +12,7 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
+        max-width: $screen-width-tablet;
         border-radius: 5px;
         padding: 1rem;
         margin: 1rem;
@@ -23,7 +24,7 @@
     }
 
     &__activity {
-        border: 1px solid $darkened-primary-blue;
+        border: 1px solid $darkened-light-blue;
         border-radius: 5px;
         padding: 1rem;
         margin: 1rem;

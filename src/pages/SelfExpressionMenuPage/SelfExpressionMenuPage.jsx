@@ -10,7 +10,8 @@ function SelfExpressionMenuPage() {
                     Self-Expression Activities
                 </h1>
                 <img src={greekBustWithGoldImg} alt="An Ancient-Greek-style bust inlined with cracks of gold." className="self-expression-menu-page__img" />
-                <p className="self-expression-menu-page__description">These activities are just few of the many ways to express who we are and what we want to say. It's encouraged to find other healthy ways to express yourself; don't be limited to these activities.</p>
+                <h4 className="self-expression-menu-page__heading">What are some good ways to express yourself?</h4>
+                <p className="self-expression-menu-page__description">These are just a few ways to express emotions and thoughts. It's encouraged to find other healthy ways to express yourself; don't be limited to these activities! To begin, please click on one of the following activities.</p>
                 <Link
                     className="self-expression-activity self-expression-activity--drawing"
                     to={"/self-expression/drawing"}
