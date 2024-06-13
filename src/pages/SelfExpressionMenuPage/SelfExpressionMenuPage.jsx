@@ -11,6 +11,7 @@ function SelfExpressionMenuPage() {
                     Self-Expression Activities
                 </h1>
                 <img src={athenaImg} alt="Statue of Athena." className="self-expression-menu-page__img" />
+                <p className="self-expression-menu-page__img-label">Statue of Athena.</p>
                 <h4 className="self-expression-menu-page__heading">What are some good ways to express yourself?</h4>
                 <p className="self-expression-menu-page__description">These are just a few ways to express emotions and thoughts. It's encouraged to find other healthy ways to express yourself; don't be limited to these activities! To begin, please click on one of the following activities.</p>
                 <Link
