@@ -16,6 +16,13 @@
         margin: 1rem;
         width: 100%;  
         max-width: $screen-width-tablet;
+        animation: fade-in 1s;
+
+        @include tablet {
+            padding: 2rem;
+            border: 1px solid $light-blue;
+            box-shadow: 5px 5px 10px $medium-blue;
+        }
     }
 
     &__img {
@@ -39,6 +46,7 @@
     &__slogan {
         font-style: italic;
         margin: 0.5rem 0;
+        text-align: center;
     }
 
     &__quote {

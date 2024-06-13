@@ -16,6 +16,13 @@
         margin: 1rem;
         width: 80%;
         max-width: $screen-width-tablet;
+        animation: fade-in 1s;
+
+        @include tablet {
+            padding: 3rem;
+            border: 1px solid $light-blue;
+            box-shadow: 5px 5px 10px $medium-blue;
+        }
     }
 
     &__title {
@@ -28,7 +35,8 @@
     }
 
     &__img {
-        width: 11rem;
+        width: 12.5rem;
+        border-radius: 5px;
     }
 
     .self-expression-activity {

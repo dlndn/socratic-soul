@@ -15,6 +15,13 @@
         margin: 1rem;
         width: 80%;
         max-width: 768px;
+        animation: fade-in 1s;
+
+        @include tablet {
+            padding: 3rem;
+            border: 1px solid $light-blue;
+            box-shadow: 5px 5px 10px $medium-blue;
+        }
     }
 
     &__title {

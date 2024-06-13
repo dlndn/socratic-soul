@@ -1,6 +1,7 @@
 import "./SelfExpressionMenuPage.scss";
 import { Link } from "react-router-dom";
 import greekBustWithGoldImg from "../../assets/images/kintsugi-greek-bust.png";
+import athenaImg from "../../assets/images/athena.jpg"
 
 function SelfExpressionMenuPage() {
     return (
@@ -9,7 +10,7 @@ function SelfExpressionMenuPage() {
                 <h1 className="self-expression-menu-page__title">
                     Self-Expression Activities
                 </h1>
-                <img src={greekBustWithGoldImg} alt="An Ancient-Greek-style bust inlined with cracks of gold." className="self-expression-menu-page__img" />
+                <img src={athenaImg} alt="Statue of Athena." className="self-expression-menu-page__img" />
                 <h4 className="self-expression-menu-page__heading">What are some good ways to express yourself?</h4>
                 <p className="self-expression-menu-page__description">These are just a few ways to express emotions and thoughts. It's encouraged to find other healthy ways to express yourself; don't be limited to these activities! To begin, please click on one of the following activities.</p>
                 <Link

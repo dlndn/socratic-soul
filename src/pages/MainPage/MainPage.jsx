@@ -7,7 +7,7 @@ function MainPage() {
         <section className="main-page">
             <div className="main-page__content">
                 <h1 className="main-page__title">Socratic Soul</h1>
-                <p className="main-page__slogan">Ask more. Think more. Express more.</p>
+                <p className="main-page__slogan">Think more. Understand more. Express more.</p>
                 <img src={wingedVictoryImg} alt="The Niké of Samothrace statue." className="main-page__img" />
                 <p className="main-page__img-label">"Niké of Samothrace" in Louvre Museum</p>
                 <h4 className="main-page__quote">"True wisdom comes to each of us when we realize how little we understand about life, ourselves, and the world around us."</h4>

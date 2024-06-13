@@ -70,6 +70,10 @@
             border-radius: 5px;
             background-color: $light-blue;
             font-size: 1rem;
+
+            &:disabled {
+                background-color: $light-gray;
+            }
         }
     }
 
@@ -87,6 +91,10 @@
             border-radius: 5px;
             flex: 1;
             font-size: 0.9rem;
+
+            &:hover {
+                background-color: $medium-blue;
+            }
         }
 
         &__text {

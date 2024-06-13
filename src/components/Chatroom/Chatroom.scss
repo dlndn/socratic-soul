@@ -47,6 +47,10 @@
                 flex: 1;
                 font-size: 1rem;
             }
+
+            &:hover {
+                background-color: $medium-blue;
+            }
         }
     }
 
